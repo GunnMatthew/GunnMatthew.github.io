@@ -2,16 +2,20 @@
 	text-shadow: 1px 1px 4px #800000;
 }
 
+.italics {
+	font-style: italic;
+}
+
 :root {
-	.global-color-1 {
-		color: #800000;
-	}
+	--global-color-1: blue;
+	--h3-color: #333300;
 }
 
 /* the styles for the elements */
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
+	background-color: #868679;
 }
 
 a { font-style: normal;}
@@ -20,6 +24,7 @@ a:hover, a:focus { font-style: italic;}
 /* the styles for the header */
 header h2 {
 	font-size: 170%;
+	color: #800000;
 	text-indent: 30px;
 }
 header h3 {
@@ -43,7 +48,11 @@ main h2 {
 	font-size: 130%;
 }
 main h3 {
+	color: var(--h3-color);
 	font-size: 105%;
+}
+main blockquote {
+	font-style: italic;
 }
 
 /* the styles for the footer */
