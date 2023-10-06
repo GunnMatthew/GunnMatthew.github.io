@@ -1,10 +1,10 @@
 .shadow {
-	text-shadow: 1px 1px 4px #800000;
+	text-shadow: 1px 1px 4px red;
 }
 
 :root {
 	.global-color-1 {
-		color: #800000;
+		color: red;
 	}
 }
 
@@ -20,7 +20,6 @@ a:hover, a:focus { font-style: italic;}
 /* the styles for the header */
 header h2 {
 	font-size: 170%;
-	color: #800000;
 	text-indent: 30px;
 }
 header h3 {
