@@ -11,9 +11,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
 	width: 60%;
+	min-width: 300px;
 	margin: 0 auto;
-	background-color: #4A6980;
-	border: 3px solid #3FA3EB;
+	background-color: #8c8b8b;
+	border: 3px solid #4D4A4B;
 	border-radius: 5px;
 	display: grid;
 	grid-template: auto auto auto auto / 100%;
@@ -31,50 +32,45 @@ header {
 	grid-area: header;
 }
 header img{
-	max-width: 75%;
+	max-width: 100%;
 	display: block;
 	margin: auto;
 }
 nav {
 	grid-area: navbar;
 }
-#nav_menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-basis: 100%;
-	align-items: center;
-	position: relative;
+nav a {
+	color:white;
+	background: rgba(0,0,0,0.2);
+	letter-spacing:2px;
+	text-decoration:none;
+	display:inline-block;
+	width:100%;
+	padding:20px 0px;
+	text-align:center;
+	font-weight:500;
+	cursor:pointer;
+	transition: all 0.5s;
 }
-#nav_menu ul li {
-	flex-basis: 20%;
+.flex-nav a:hover {
+	background: rgba(0,0,0,0.3);
 }
-#nav_menu ul li a {
-    display: block;
-    text-align: center;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: #0059ff;
-	border: 3px solid #3FA3EB;
-    color: white;
-    font-weight: bold;
+.wrapper {
+	max-width:1000px;
+	position:relative;
+	margin-top:1em;
+	width:100%;
+	left:50%;
+	transform:translate(-50%);
 }
-#nav_menu a.current {
-	color: yellow;
+.flex-nav ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:flex;
 }
-#nav_menu ul ul {
-	width: 20%;
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-#nav_menu ul li:hover > ul {
-	display: block;
-}
-#nav_menu > ul::after {
-    content: "";
-    display: block;
+.flex-nav li {
+	flex:3;
 }
 main {
 	grid-area: main;
@@ -83,12 +79,14 @@ main {
 }
 aside {
     float: left;
-    border-right: 3px solid #3FA3EB;
+    border: 3px solid #4D4A4B;
+	background-color: #736f70;
     padding-right: 1em;
     max-width: 30%;
 }
 aside ul li {
     padding: 1em;
+	list-style: none;
 }
 main h1 {
 	text-align: center;
@@ -104,43 +102,20 @@ main p {
 	text-align: center;
 	font-size: 120%;
 }
-#mobile_menu {
-	display: none;
-}
 
-@media only screen and (max-width: 1200px) {
-    #nav_menu ul {
-        font-size: 65%;
-    }
-	main h1 {
-		font-size: 85%;
+@media all and (max-width: 1000px){
+	.flex-nav ul{
+		flex-wrap:wrap;
 	}
-	main h3 {
-		font-size: 85%
+	.flex-nav li{
+		flex: 1 1 50%;
 	}
-	main p {
-		font-size: 85%;
+  }
+  @media all and (max-width:500px){
+	.flex-nav li{
+		flex: 0.5 1 15%;
 	}
-}
-
-@media only screen and (max-width: 925px) {
-    #nav_menu ul {
-        font-size: 50%;
-    }
-}
-
-@media only screen and (max-width: 721px) {
-	#nav_menu {
-		display: none;
+	nav a {
+		font-size: 50%;
 	}
-	#mobile_menu {
-		display: block;
-	}
-	.slicknav_menu {
-		background-color: #3FA3EB !important;
-	}
-}
-
-@media only screen and (max-width: 440px) {
-	body { font-size: 90%; }
-}
+  }
