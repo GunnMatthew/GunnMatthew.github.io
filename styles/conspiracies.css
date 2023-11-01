@@ -93,6 +93,14 @@ main p {
 	text-align: center;
 	font-size: 90%;
 }
+footer {
+	grid-area: footer;
+	background: rgba(0,0,0,0.2);
+}
+footer p {
+	text-align: center;
+	padding: 1em 0;
+}
 
 @media all and (max-width: 1000px){
 	.flex-nav ul{
