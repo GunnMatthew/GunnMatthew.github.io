@@ -87,14 +87,14 @@ main h1 {
 	padding-bottom: 1em;
 	border-bottom: 3px solid #3FA3EB;
 }
-main h2 {
-	text-align: center;
-	font-size: 120%;
+main h3 {
+	font-size: 100%;
+    text-align: center;
 	margin: 1em auto;
 }
 main p {
 	text-align: center;
-	font-size: 120%;
+	font-size: 90%;
 }
 #mobile_menu {
 	display: none;
@@ -122,6 +122,22 @@ main p {
 }
 
 @media only screen and (max-width: 721px) {
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	article img { 
+		max-width: 30%; 
+	}
+	#speakers {
+		column-count: 2;
+	}
 	#nav_menu {
 		display: none;
 	}
