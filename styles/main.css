@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* html style */
+html {
+	background-color: black;
+}
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 98%;
+	border: 3px solid #3FA3EB;
+	background-color: #597285;
+	display: grid;
+	grid-template: auto auto auto auto / 100%;
+	grid-template-areas: 
+		"header"
+		"navbar"
+		"main"
+		"footer";
+
+}
+a:focus, a:hover {
+	font-style: italic;
+}
