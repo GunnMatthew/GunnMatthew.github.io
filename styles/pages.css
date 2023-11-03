@@ -4,13 +4,14 @@
 }
 /* html style */
 html {
-	background-color: black;
+	background-image: url(/images/spaceBG.png);
+	background-repeat: repeat;
 }
 /* the styles for the elements */
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-	width: 60%;
+	width: 75%;
 	min-width: 300px;
 	margin: 0 auto;
 	background-color: #8c8b8b;
@@ -30,6 +31,7 @@ a:focus, a:hover {
 }
 header {
 	grid-area: header;
+	border-bottom: 3px solid #4D4A4B;
 }
 header img{
 	max-width: 100%;
@@ -46,7 +48,7 @@ nav a {
 	text-decoration:none;
 	display:inline-block;
 	width:100%;
-	padding:20px 0px;
+	padding:1.25em 0;
 	text-align:center;
 	font-weight:500;
 	cursor:pointer;
@@ -81,34 +83,89 @@ aside {
     float: left;
     border: 3px solid #4D4A4B;
 	background-color: #736f70;
+	margin-right: 1em;
     padding-right: 1em;
     max-width: 30%;
+	min-width: 80px;
 }
 aside ul li {
     padding: 1em;
 	list-style: none;
+}
+section img {
+	border: 3px solid #4D4A4B;
+	float: right;
+	max-width: 29%;
+	display: block;
+	margin: 0 auto 0.5em auto;
+}
+section h2 {
+	text-align: center;
+	font-size: 120%;
+	margin: 0 auto 2em auto;
+}
+section p {
+	text-align: center;
 }
 main h1 {
 	text-align: center;
 	margin: auto auto 1em auto;
 	padding-bottom: 1em;
 }
-main h2 {
-	text-align: center;
-	font-size: 120%;
-	margin: 1em auto;
-}
 main p {
-	text-align: center;
 	font-size: 120%;
+}
+footer {
+	grid-area: footer;
+	background: rgba(0,0,0,0.2);
+}
+footer p {
+	text-align: center;
+	padding: 1em 0;
 }
 
-@media all and (max-width: 1000px){
+@media all and (max-width: 1600px){
+	aside ul li{
+		font-size: 90%;
+	}
+	section h2 {
+		font-size: 100%
+	}
+	section p {
+		font-size: 90%;
+	}
+}
+@media all and (max-width: 1360px){
+	aside ul li{
+		font-size: 80%;
+	}
+	section h2 {
+		font-size: 90%
+	}
+	section p {
+		font-size: 80%;
+	}
+}
+@media all and (max-width: 1219px){
+	aside ul li{
+		font-size: 70%;
+	}
+	section h2 {
+		font-size: 80%
+	}
+	section p {
+		font-size: 70%;
+	}
+}
+@media all and (max-width: 1090px){
 	.flex-nav ul{
 		flex-wrap:wrap;
 	}
 	.flex-nav li{
 		flex: 1 1 50%;
+	}
+	section img {
+		float: none;
 	}
   }
   @media all and (max-width:500px){
@@ -117,5 +174,8 @@ main p {
 	}
 	nav a {
 		font-size: 50%;
+	}
+	section img {
+		display: hide;
 	}
   }

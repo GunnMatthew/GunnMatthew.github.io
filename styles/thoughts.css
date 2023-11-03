@@ -2,6 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
+.indent {
+    text-indent: 40px;
+}
+.center {
+    text-align: center;
+}
 /* html style */
 html {
 	background-image: url(/images/spaceBG.png);
@@ -31,12 +37,12 @@ a:focus, a:hover {
 }
 header {
 	grid-area: header;
-	border-bottom: 3px solid #4D4A4B;
+    border-bottom: 3px solid #4D4A4B;
 }
 header img{
 	max-width: 100%;
 	display: block;
-	margin: auto;
+    margin: auto;
 }
 nav {
 	grid-area: navbar;
@@ -90,9 +96,14 @@ main h3 {
     text-align: center;
 	margin: 1em auto;
 }
+main ol {
+    text-align: center;
+    font-size: 85%;
+    margin: auto 5em;
+}
 main p {
-	text-align: center;
 	font-size: 90%;
+    margin: 1em auto;
 }
 footer {
 	grid-area: footer;
