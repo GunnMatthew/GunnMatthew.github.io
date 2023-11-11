@@ -4,8 +4,11 @@
 }
 /* html style */
 html {
-	background-image: url(/images/spaceBG.png);
-	background-repeat: repeat;
+	background:#000 url(/images/stars.png) repeat top center;
+	-moz-animation:moveStarBack 200s linear infinite;
+	-ms-animation:moveStarBack 200s linear infinite;
+	-webkit-animation:moveStarBack 200s linear infinite;
+	animation:moveStarBack 200s linear infinite;
 }
 /* the styles for the elements */
 body {
@@ -122,6 +125,23 @@ footer {
 footer p {
 	text-align: center;
 	padding: 1em 0;
+}
+
+@keyframes moveStarBack {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes moveStarBack {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes moveStarBack {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes moveStarBack {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
 }
 
 @media all and (max-width: 1600px){
