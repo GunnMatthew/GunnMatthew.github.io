@@ -49,8 +49,12 @@ h2.homework {
 	margin-bottom: 2em;
 }
 .homework:hover {
-	background: rgba(0,0,0,0.3);
-	font-style: italic;
+	background:#000 url(/images/stars.png) repeat top center;
+	-moz-animation:moveStarBack 200s linear infinite;
+	-ms-animation:moveStarBack 200s linear infinite;
+	-webkit-animation:moveStarBack 200s linear infinite;
+	animation:moveStarBack 200s linear infinite;
+	color: white;
 }
 nav {
 	grid-area: navbar;
