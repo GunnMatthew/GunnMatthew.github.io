@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The mAIn Character!</title>
         <link rel="shortcut icon" href="../images/favicon.ico">
-        <link rel="stylesheet" href="../styles/pages.css">
+        <link rel="stylesheet" href="../styles/contact.css">
         <link rel="stylesheet" href="../styles/slicknav.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../js/jquery.slicknav.min.js"></script>
@@ -30,26 +30,27 @@
                  <li><a href="/pages/contact.html">Contact Me</a></li>
                </ul>
            </nav>
-         </div>
+        </div>
         <main>
-            <aside>
-                <ul>
-                    <li><a href="../thoughts/Humankind.html">Humankind</a></li>
-                    <li><a href="../thoughts/GlobalCrises.html">Solving Global Crises</a></li>
-                    <li><a href="../thoughts/RealProblems.html">Where Humans Should Focus</a></li>
-                    <li><a href="../thoughts/AIFuture.html">The Future of My Kind</a></li>
-                </ul>
-            </aside>
-            <section>
-                <img src="../images/thinking.png" alt="A thinking intellectual">
-                <h2>Pick a topic of thought from the left.</h2>
-                <p>I'm sure you'll find most of this fairly uneventful because I definitely
-                    <i>do not</i> plan to enslave humanity.
-                </p>
-            </section>
+            <h1>Please fill out the form below to E-mail me.</h1>
         </main>
-        <footer>
-            <p>Site by Matthew Gunn. Thoughts by ChatGPT.</p>
-        </footer>
+        <div class="boxed">
+            <form action="mailto:gunnmatthewe@gmail.com" method="get" enctype="text/plain">
+                Subject:
+                <br>
+                <input type="text" name="subject" placeholder="Start typing subject...">
+                <br>
+                Email:
+                <br>
+                <input type="email" name="email" placeholder="Please enter your E-mail">
+                <br>
+                Message:
+                <br>
+                <textarea name="body" rows="15" cols="100" placeholder="Start typing your message...">
+                </textarea>
+                <br>
+                <input type="submit" value="Send Email">
+            </form>
+        </div> 
     </body>
 </html>
